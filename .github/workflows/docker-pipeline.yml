@@ -1,0 +1,17 @@
+name: docker-pipeline-raju
+on: push
+jobs:
+  docker-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print your Ragister number
+        run: echo "Hello World - 22it056 "
+
+      - name: Checkout
+        uses: actions/checkout@v4.2.2
+
+      - name: docker build
+        run: docker build -t vvraju56/ml-22it056 .
+
+      - name: docker images
+        run: docker images
