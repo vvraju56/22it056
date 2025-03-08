@@ -4,14 +4,16 @@ jobs:
   docker-job:
     runs-on: ubuntu-latest
     steps:
-      - name: Print your Ragister number
-        run: echo "Hello World - 22it056 "
+      - name: Print your Register Number
+        run: echo "Hello World - 22IT056"
 
-      - name: Checkout
+      - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: docker build
+      - name: Build Docker Image
         run: docker build -t vvraju56/ml-22it056 .
 
-      - name: docker images
+      - name: List Docker Images
         run: docker images
+
+     
