@@ -8,7 +8,7 @@ jobs:
         run: echo "Hello World - 22it056 "
 
       - name: Checkout
-        uses: actions/checkout@v4.2.2
+        uses: actions/checkout@v4
 
       - name: docker build
         run: docker build -t vvraju56/ml-22it056 .
