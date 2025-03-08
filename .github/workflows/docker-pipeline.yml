@@ -7,7 +7,7 @@ jobs:
       - name: Print your Register Number
         run: echo "Hello World - 22IT056"
 
-      - name: Checkout Repository
+      - name: Checkout 
         uses: actions/checkout@v4
 
       - name: Build Docker Image
@@ -18,5 +18,3 @@ jobs:
 
       - name: Push Docker Image to DockerHub
         run: docker push vvraju56/ml-22it056
-
-     
