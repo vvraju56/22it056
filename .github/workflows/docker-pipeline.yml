@@ -11,10 +11,11 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Build Docker Image
-        run: docker build -t vvraju56/ml-22it056 .
+        run: docker build -t vvraju56/ml-22it056 -f ml/Dockerfile .
 
       - name: Docker Images
         run: docker images
 
       - name: Push Docker Image to DockerHub
         run: docker push vvraju56/ml-22it056
+
